@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 
-// import About from "./components/About";
+
 import Navbar from "./components/Navbar";
 import Textform from "./components/Textform";
 import Alert from "./components/Alert";
