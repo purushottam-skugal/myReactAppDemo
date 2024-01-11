@@ -5,6 +5,9 @@ import Navbar from "./components/Navbar";
 import Textform from "./components/Textform";
 import Alert from "./components/Alert";
 
+
+
+
 function App() {
   const [mode, setMode] = useState("light");
   const [toggle, setToggle] = useState("Enable Darkmode");
