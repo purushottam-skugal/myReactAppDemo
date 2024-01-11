@@ -1,6 +1,6 @@
 
 import React from "react";
-import "./Navbar1.css";
+import "./Style.css";
 import PropTypes from "prop-types";
 import { Link  } from "react-router-dom";
 
@@ -30,11 +30,12 @@ export default function Navbar(props) {
         <form className="d-flex" role="search">
           <input
             className="form-control me-2"
+            id=""
             type="search"
             placeholder="Search"
             aria-label="Search"
           ></input>
-          <button className="btn btn-outline-success" type="submit">
+          <button className="btn btn-outline-success" id="search" type="submit">
             Search
           </button>
         </form>
