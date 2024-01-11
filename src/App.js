@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+// import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 
-import About from "./components/About";
+// import About from "./components/About";
 import Navbar from "./components/Navbar";
 import Textform from "./components/Textform";
 import Alert from "./components/Alert";
@@ -39,10 +39,10 @@ function App() {
   return (
     <>
       <Navbar
-        mainTitle ="TextUtils"
+        mainTitle="TextUtils"
         title="Home"
-        title2="About"
-        title3="user"
+        // title2="About"
+
         mode={mode}
         toggleMode={toggleMode}
         toggle={toggle}
@@ -51,20 +51,20 @@ function App() {
       {/* <Navbar />     /// we are set props in its file itself as a default props */}
       <Alert alert={alert} />
       <div className="container my-4">
-        <Routes>
-          <Route exact path="/about" element={<About />} />
-
-          <Route
-           exact path="/"
-            element={
-              <Textform
-                heading="This is your workbook"
-                mode={mode}
-                showAlert={showAlert}
-              />
-            }
+        {/* <Routes> */}
+        {/* <Route exact path="/about" element={<About />} /> */}
+        {/* <Route */}
+        {/* exact path="/" */}
+        {/* element= */}
+        {/* { */}
+          <Textform
+            heading="This is your workbook"
+            mode={mode}
+            showAlert={showAlert}
           />
-        </Routes>
+        {/* } */}
+        {/* /> */}
+        {/* </Routes> */}
       </div>
     </>
   );

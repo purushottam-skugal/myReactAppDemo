@@ -2,7 +2,7 @@
 import React from "react";
 import "./Style.css";
 import PropTypes from "prop-types";
-import { Link  } from "react-router-dom";
+// import { Link  } from "react-router-dom";
 
 export default function Navbar(props) {
   return (
@@ -10,21 +10,21 @@ export default function Navbar(props) {
       className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
     >
       <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
+          <a className="navbar-brand" href="/">
           {props.mainTitle}
-          </Link>
+          </a>
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <Link className="nav-link" to="/">
+            <a className="nav-link" href="/">
               {props.title}
-            </Link>
+            </a>
           </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/about">
+          {/* <li className="nav-item">
+            <a className="nav-link" href="/about">
               {" "}
               {props.title2}
-            </Link>
-          </li>
+            </a>
+          </li> */}
         </ul>
 
         <form className="d-flex" role="search">
