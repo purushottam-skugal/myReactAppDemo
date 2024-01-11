@@ -9,6 +9,7 @@ export default function Textform(props) {
       let newText = text.toUpperCase();
       setText(newText);
     console.log(newText);
+    props.showAlert("Converted to uppercase!", "success");
   }
   const [text, setText] = useState("");
   // setText('new text');
