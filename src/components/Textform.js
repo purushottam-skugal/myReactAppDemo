@@ -20,6 +20,8 @@ export default function Textform(props) {
   }
   const [text, setText] = useState("");
   // setText('new text');
+
+  
   return (
     <>
       <div
